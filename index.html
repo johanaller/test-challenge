@@ -12,24 +12,17 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
 
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <img src="./images/image-header-desktop.jpg" alt="" />
-    <section class="text-wrapper outer">
-      <section class="text-wrapper inner">
+    <section class="wrapper">
+      <div class="image-container">
+        <img src="./images/image-header-desktop.jpg" alt="" />
+      </div>
+
+      <!-- text-container start -->
+      <div class="text-container">
         <div class="text-header">
           Get <span> insights </span> that help your business grow.
         </div>
@@ -39,6 +32,7 @@
           regarding revenue, customer experience, and overall efficiency.
         </div>
 
+        <!-- kpi wrapper start -->
         <div class="kpi-wrapper">
           <!-- ------ -->
           <div class="kpi-box">
@@ -57,14 +51,10 @@
           </div>
           <!-- ------ -->
         </div>
-      </section>
-    </section>
+        <!-- kpi wrapper end -->
+      </div>
+      <!-- text-container end -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </section>
   </body>
 </html>

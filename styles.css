@@ -1,63 +1,118 @@
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-/* todo: wrapper runt både bild och text. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --wrapper-bg-color: #1b1937;
+  --main-bg-color: #0a0c1c;
+  --element-accent-color: #ab5cdb;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 0px 10px 10px 0px; */
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+  opacity: 75%;
+
+  mix-blend-mode: multiply;
+  opacity: 75%;
+}
 
 body {
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.9375rem;
-  color: white;
-  background-color: hsl(233, 47%, 7%);
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.img {
-  max-width: 740px;
+.image-container {
+  background-color: var(--element-accent-color);
+  border-radius: 5px;
 }
 
-.text-wrapper.outer {
+.wrapper {
+  background-color: var(--wrapper-bg-color);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 56px 32px;
+  border-radius: 12.8px;
+}
+
+.text-container {
   text-align: center;
-  background-color: hsl(244, 38%, 16%);
-  max-width: 740px;
-  padding: 40px 0 30px 0;
-  min-height: 600px;
-}
-
-.text-wrapper.inner {
-  margin: 0 10px;
+  padding: 32px 56px;
 }
 
 .text-header {
   font-weight: 700;
-  font-size: 1.7rem;
-  margin: 0 0 12px 0;
+  font-size: 1.75rem;
+  margin: 0 0 16px 0;
 }
 
 .main-text {
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
+  font-family: "Inter";
+  font-size: 0.9375rem;
+  line-height: 1.5625;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
 .kpi-box {
-  margin: 20px 0 0 0;
+  margin: 24px 0 0 0;
 }
 
 .kpi-box.number {
   font-size: 1.5rem;
   font-weight: 700;
-  margin: 0 0 5px 0;
+  line-height: 1.21;
+  margin: 0 0 2px 0;
 }
 
 .kpi-box.text {
   font-size: 0.75rem;
-  text-xansform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 2.08333;
   margin: 0 0 0 0;
-  letter-spacing: 1.5px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
 
 span {
-  color: hsl(277, 64%, 61%);
+  color: var(--element-accent-color);
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 1110px;
+  }
+
+  .text-container {
+    text-align: left;
+    padding: 70px 154px 60px 70px;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kpi-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
