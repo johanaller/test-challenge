@@ -5,24 +5,6 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --wrapper-bg-color: #1b1937;
-  --main-bg-color: #0a0c1c;
-  --element-accent-color: #ab5cdb;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  /* border-radius: 0px 10px 10px 0px; */
-  object-fit: cover;
-  object-position: center;
-  mix-blend-mode: multiply;
-  opacity: 75%;
-
-  mix-blend-mode: multiply;
-  opacity: 75%;
-}
 
 body {
   align-items: center;
@@ -36,6 +18,23 @@ body {
   min-height: 100vh;
 }
 
+:root {
+  --wrapper-bg-color: #1b1937;
+  --main-bg-color: #0a0c1c;
+  --element-accent-color: #ab5cdb;
+}
+
+.main-image {
+  height: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  object-position: center;
+  opacity: 75%;
+  width: 100%;
+}
+
+
+
 .image-container {
   background-color: var(--element-accent-color);
   border-radius: 5px;
@@ -43,11 +42,11 @@ body {
 
 .wrapper {
   background-color: var(--wrapper-bg-color);
-  width: 90%;
+  border-radius: 12.8px;
   display: flex;
   flex-direction: column;
   margin: 56px 32px;
-  border-radius: 12.8px;
+  width: 90%;
 }
 
 .text-container {
@@ -56,16 +55,20 @@ body {
 }
 
 .text-header {
-  font-weight: 700;
   font-size: 1.75rem;
+  font-weight: 700;
   margin: 0 0 16px 0;
 }
 
+.text-header__accent {
+  color: var(--element-accent-color);
+}
+
 .main-text {
-  margin: 0 0 40px 0;
   font-family: "Inter";
   font-size: 0.9375rem;
   line-height: 1.5625;
+  margin: 0 0 40px 0;
   mix-blend-mode: normal;
   opacity: 0.75;
 }
@@ -74,14 +77,14 @@ body {
   margin: 24px 0 0 0;
 }
 
-.kpi-box.number {
+.kpi-box__number {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.21;
   margin: 0 0 2px 0;
 }
 
-.kpi-box.text {
+.kpi-box__text {
   font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.0625rem;
@@ -92,10 +95,6 @@ body {
   text-transform: uppercase;
 }
 
-span {
-  color: var(--element-accent-color);
-}
-
 @media screen and (min-width: 992px) {
   .wrapper {
     flex-direction: row-reverse;
@@ -104,11 +103,11 @@ span {
   }
 
   .text-container {
-    text-align: left;
-    padding: 70px 154px 60px 70px;
-    max-width: 570px;
     display: flex;
     flex-direction: column;
+    max-width: 570px;
+    padding: 70px 154px 60px 70px;
+    text-align: left;
   }
 
   .kpi-wrapper {
