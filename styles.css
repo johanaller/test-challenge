@@ -24,17 +24,6 @@ body {
   --element-accent-color: #ab5cdb;
 }
 
-.main-image {
-  height: 100%;
-  mix-blend-mode: multiply;
-  object-fit: cover;
-  object-position: center;
-  opacity: 75%;
-  width: 100%;
-}
-
-
-
 .image-container {
   background-color: var(--element-accent-color);
   border-radius: 5px;
@@ -49,9 +38,19 @@ body {
   width: 90%;
 }
 
+.main-image {
+  display: inherit;
+  height: 100%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  object-position: center;
+  opacity: 75%;
+  width: 100%;
+}
+
 .text-container {
   text-align: center;
-  padding: 32px 56px;
+  padding: 32px 40px;
 }
 
 .text-header {
