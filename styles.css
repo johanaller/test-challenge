@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 56px 32px;
-  width: 90%;
+  width: 87.3%;
 }
 
 .main-image {
@@ -50,7 +50,7 @@ body {
 
 .text-container {
   text-align: center;
-  padding: 32px 40px;
+  padding: 32px 36px;
 }
 
 .text-header {
